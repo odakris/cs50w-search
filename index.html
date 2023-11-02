@@ -2,14 +2,37 @@
 <html lang="en">
 
 <head>
+    <meta charset="utf-8">
     <title>Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
-    <form action="https://www.google.com/search">
-        <input type="text" name="q">
-        <input type="submit" value="Google Search">
-    </form>
+    <div id="container">
+        <div id="navbar">
+            <ul>
+                <li><a>Images</a></li>
+                <li><a>Advanced Search</a></li>
+            </ul>
+        </div>
+        <div id="main">
+            <div id="logo"><img src="./images/google_index.png" alt="google"></div>
+            <div id="search">
+                <form action="https://www.google.com/search">
+                    <input type="text" name="q">
+                    <input type="submit" value="Google Search">
+                    <input type="submit" value="I'm Feeling Lucky">
+                </form>
+            </div>
+        </div>
+        <div id="footer">
+            <p>Created by <a href="https://github.com/odakris?tab=repositories" target="_blank">odakris</a></p>
+        </div>
+
+
+    </div>
+
 </body>
 
 </html>
