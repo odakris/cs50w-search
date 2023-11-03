@@ -4,30 +4,46 @@
 <head>
     <meta charset="utf-8">
     <title>Search</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
-    <div id="container">
-        <div id="navbar">
+    <div class="container flex-column">
+        <div class="navbar flex-row link">
             <ul>
                 <li><a>Images</a></li>
                 <li><a>Advanced Search</a></li>
             </ul>
         </div>
-        <div id="main">
-            <div id="logo"><img src="./images/google_index.png" alt="google"></div>
-            <div id="search">
-                <form action="https://www.google.com/search">
-                    <input type="text" name="q">
-                    <input type="submit" value="Google Search">
-                    <input type="submit" value="I'm Feeling Lucky">
+        <div class="main">
+            <div class="logo"><img src="./images/google_index.png" alt="google"></div>
+            <div class="search">
+                <form action="https://www.google.com/search" autocomplete="off">
+                    <div class="text flex-row">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" name="q" autofocus="autofocus">
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="Google Search">
+                        <input type="submit" value="I'm Feeling Lucky">
+                    </div>
+
                 </form>
+
             </div>
+
         </div>
-        <div id="footer">
+        <div class="hidden flex-row"></div>
+        <div class="footer flex-row link">
+            <p><a href="https://cs50.harvard.edu/web/2020/projects/0/search/" target="_blank">Project 0 - Search</a></p>
+            <p><a href="https://www.youtube.com/watch?v=Nn7EX3zkGUo&list=PLhQjrBD2T380xvFSUmToMMzERZ3qB5Ueu"
+                    target="_blank">CS50’s Web Programming with Python and JavaScript</a></p>
             <p>Created by <a href="https://github.com/odakris?tab=repositories" target="_blank">odakris</a></p>
+
         </div>
 
 
