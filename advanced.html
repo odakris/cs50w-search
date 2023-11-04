@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <div class="container flex-column">
+        <div class="navbar flex-row link">
+            <ul>
+                <li><a href="./index.html">Search</a></li>
+                <li><a href="./images.html">Images</a></li>
+            </ul>
+        </div>
+        <div class="main-advanced">
+            <div class="title">
+                <p>Advanced Search</p>
+            </div>
+            <hr>
+            <div class="advanced-search">
+                <form action="https://www.google.com/images" autocomplete="off">
+                    <table>
+                        <tr class="table-row">
+                            <td class="label">Find pages with...</td>
+                            <td class="label-input">&nbsp;</td>
+                            <td class="lable-description">To do this in the search box</td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="label">all these words:</td>
+                            <td class="label-input"><input type="text" name="q" autofocus="autofocus"></td>
+                            <td class="lable-description">Type the important words: <span>tricolor rat terrier</span>
+                            </td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="label">this exact word or phrase:</td>
+                            <td class="label-input"><input type="text" name="q"></td>
+                            <td class="lable-description">Put exact words in quotes: <span>"rat terrier"</span></td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="label">any of these words:</td>
+                            <td class="label-input"><input type="text" name="q"></td>
+                            <td class="lable-description">Type <span>OR</span> between all the words you want:
+                                <span>miniature OR standard</span>
+                            </td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="label">none of these words:</td>
+                            <td class="label-input"><input type="text" name="q"></td>
+                            <td class="lable-description">Put a minus sign just before words you don't want:
+                                <span>-rodent, -"Jack Russell"</span>
+
+                            </td>
+
+                        </tr>
+                        <hr>
+                    </table>
+                    <hr>
+                </form>
+                <hr>
+            </div>
+            <hr>
+        </div>
+
+        <div class="footer flex-row link">
+            <p><a href="https://cs50.harvard.edu/web/2020/projects/0/search/" target="_blank">Project 0 - Search</a></p>
+            <p><a href="https://www.youtube.com/watch?v=Nn7EX3zkGUo&list=PLhQjrBD2T380xvFSUmToMMzERZ3qB5Ueu"
+                    target="_blank">CS50’s Web Programming with Python and JavaScript</a></p>
+            <p>Created by <a href="https://github.com/odakris?tab=repositories" target="_blank">odakris</a></p>
+        </div>
+    </div>
+</body>
+
+</html>
