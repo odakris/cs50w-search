@@ -65,6 +65,16 @@ body {
 
 .logo {
   text-align: center;
+  height: 106px;
+}
+.logo .img-logo {
+  width: 0;
+  height: 0;
+  position: relative;
+  top: -25px;
+  left: 80px;
+  color: #4285f4;
+  font-size: 16px;
 }
 
 .search {
@@ -124,7 +134,33 @@ body {
     flex-direction: column;
   }
   .footer p {
+    text-align: center;
     margin: 0;
+  }
+}
+@media screen and (max-width: 481px) {
+  * {
+    font-size: 10px;
+  }
+  .navbar ul {
+    margin: 2.5px;
+    padding-right: 10px;
+  }
+  .navbar ul li {
+    margin: 5px;
+    padding: 2.5px;
+  }
+  .logo {
+    transform: scale(0.6);
+    margin-bottom: -20px;
+  }
+  .search .text input {
+    height: 25px;
+  }
+  .search .submit input {
+    height: 25px;
+    margin: 2.5px 5px;
+    padding: 4px 7.5px;
   }
 }
 
