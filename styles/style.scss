@@ -1,6 +1,7 @@
 $border-color: #dadce0;
 $input-color: #9aa0a6;
 $text-color: #3c4043;
+$google-blue: #4285f4;
 $box-shadow-color: rgba(0, 0, 0, 0.3);
 
 * {
@@ -92,7 +93,7 @@ body {
     position: relative;
     top: -25px;
     left: 80px;
-    color: #4285f4;
+    color: $google-blue;
     font-size: 16px;
   }
 }
@@ -149,14 +150,106 @@ body {
   }
 }
 
-// ADVANCED PAGE
+// ADVANCED SEARCH PAGE
+.logo-navbar {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+
+  img {
+    width: 74px;
+    height: 24px;
+  }
+}
+
+.title,
+form {
+  margin: 25px 45px;
+}
+
+.title {
+  p {
+    color: #d93025;
+    font-size: 20px;
+  }
+}
+
 .main-advanced {
   width: 100%;
   height: 100%;
 
-  .title,
-  .advanced-search {
-    margin: 25px 25px;
+  form {
+    min-width: 300px;
+    max-width: 1270px;
+
+    table {
+      width: 100%;
+      table-layout: fixed;
+
+      .label-title {
+        font-size: 16px !important;
+        color: #777 !important;
+        font-weight: 700;
+      }
+
+      .label {
+        color: $text-color;
+        width: 167px;
+        height: 42px;
+        font-size: 13px;
+      }
+
+      .label-input {
+        width: 60%;
+
+        input {
+          width: 100%;
+          height: 35px;
+          font-size: 13px;
+          padding: 5px;
+          border: 1px solid $border-color;
+        }
+
+        input:focus {
+          outline: none;
+          border-color: $google-blue;
+          box-shadow: 0px 0px 3px $google-blue;
+        }
+      }
+
+      .label-description {
+        font-size: 11px;
+        color: $text-color;
+        padding-left: 15px;
+
+        span {
+          font-family: monospace;
+          font-size: 11px;
+        }
+      }
+
+      .advanced-search-btn {
+        float: right;
+        margin: 20px 0;
+
+        input {
+          font-size: 12px;
+          background-color: $google-blue;
+          color: #fff;
+          border: 1px solid $google-blue;
+          border-radius: 2px;
+          min-width: 120px;
+          height: 30px;
+          padding: 0 12px;
+          font-weight: bold;
+          cursor: pointer;
+        }
+
+        input:hover {
+          background-color: #4d91ff;
+        }
+      }
+    }
   }
 }
 
@@ -170,12 +263,29 @@ body {
   a {
     color: $input-color;
   }
+
   p {
     padding: 5px;
   }
 }
 
 // MEDIA QUERY
+@media screen and (max-width: 930px) {
+  .main-advanced {
+    .label-input {
+      input {
+        width: 100%;
+      }
+    }
+
+    .label-description {
+      white-space: nowrap;
+      visibility: collapse;
+      overflow: hidden;
+    }
+  }
+}
+
 @media screen and (max-width: 650px) {
   .footer {
     flex-direction: column;
@@ -222,6 +332,57 @@ body {
         height: 25px;
         margin: 2.5px 5px;
         padding: 4px 7.5px;
+      }
+    }
+  }
+
+  // ADVANCED SEARCH PAGE
+  .logo-navbar {
+    position: absolute;
+    top: 8px;
+    left: 13px;
+
+    img {
+      width: 49px;
+      height: 16px;
+    }
+  }
+
+  .main-advanced {
+    .title {
+      p {
+        font-size: 13px;
+      }
+    }
+
+    .title,
+    form {
+      margin: 15px;
+      padding: 0 10px;
+    }
+
+    .advanced-search {
+      .label-title {
+        font-size: 11px !important;
+      }
+      .label {
+        font-size: 10px;
+        max-width: 100px;
+      }
+
+      .label-input {
+        input {
+          height: 25px;
+          font-size: 8px;
+        }
+      }
+
+      .advanced-search-btn {
+        input {
+          font-size: 10px;
+          min-width: 80px;
+          height: 25px;
+        }
       }
     }
   }
