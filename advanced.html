@@ -14,6 +14,7 @@
 <body>
     <div class="container flex-column">
         <div class="navbar flex-row link">
+            <div class="logo-navbar"><a href="./index.html"><img src="./images/google_index.png" alt="google"></a></div>
             <ul>
                 <li><a href="./index.html">Search</a></li>
                 <li><a href="./images.html">Images</a></li>
@@ -25,47 +26,50 @@
             </div>
             <hr>
             <div class="advanced-search">
-                <form action="https://www.google.com/images" autocomplete="off">
+                <form action="https://www.google.com/search" autocomplete="off">
                     <table>
-                        <tr class="table-row">
-                            <td class="label">Find pages with...</td>
-                            <td class="label-input">&nbsp;</td>
-                            <td class="lable-description">To do this in the search box</td>
-                        </tr>
-                        <tr class="table-row">
-                            <td class="label">all these words:</td>
-                            <td class="label-input"><input type="text" name="q" autofocus="autofocus"></td>
-                            <td class="lable-description">Type the important words: <span>tricolor rat terrier</span>
-                            </td>
-                        </tr>
-                        <tr class="table-row">
-                            <td class="label">this exact word or phrase:</td>
-                            <td class="label-input"><input type="text" name="q"></td>
-                            <td class="lable-description">Put exact words in quotes: <span>"rat terrier"</span></td>
-                        </tr>
-                        <tr class="table-row">
-                            <td class="label">any of these words:</td>
-                            <td class="label-input"><input type="text" name="q"></td>
-                            <td class="lable-description">Type <span>OR</span> between all the words you want:
-                                <span>miniature OR standard</span>
-                            </td>
-                        </tr>
-                        <tr class="table-row">
-                            <td class="label">none of these words:</td>
-                            <td class="label-input"><input type="text" name="q"></td>
-                            <td class="lable-description">Put a minus sign just before words you don't want:
-                                <span>-rodent, -"Jack Russell"</span>
-
-                            </td>
-
-                        </tr>
-                        <hr>
+                        <tbody>
+                            <tr class="table-row">
+                                <td class="label label-title">Find pages with...</td>
+                                <td class="label-input">&nbsp;</td>
+                                <td class="label-description label-title">To do this in the search box</td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="label">all these words:</td>
+                                <td class="label-input"><input type="text" name="as_q" autofocus="autofocus"></td>
+                                <td class="label-description">Type the important words: <span>tricolor rat
+                                        terrier</span>
+                                </td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="label">this exact word or phrase:</td>
+                                <td class="label-input"><input type="text" name="as_epq"></td>
+                                <td class="label-description">Put exact words in quotes: <span>"rat terrier"</span></td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="label">any of these words:</td>
+                                <td class="label-input"><input type="text" name="as_op"></td>
+                                <td class="label-description">Type <span>OR</span> between all the words you want:
+                                    <br><span>miniature OR standard</span>
+                                </td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="label">none of these words:</td>
+                                <td class="label-input"><input type="text" name="as_eq"></td>
+                                <td class="label-description">Put a minus sign just before words you don't want:
+                                    <br><span>-rodent, -"Jack Russell"</span>
+                                </td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="label">&nbsp;</td>
+                                <td class="advanced-search-btn"><input type="submit" value="Advanced Search"></td>
+                                <td class="label-description">&nbsp;</span>
+                                </td>
+                            </tr>
+                        </tbody>
                     </table>
-                    <hr>
                 </form>
-                <hr>
             </div>
-            <hr>
         </div>
 
         <div class="footer flex-row link">
