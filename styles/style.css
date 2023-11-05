@@ -82,6 +82,10 @@ body {
   max-width: 600px;
   margin: auto;
 }
+.search form {
+  width: 100%;
+  margin: auto;
+}
 .search .text input {
   width: 100%;
   height: 45px;
@@ -252,7 +256,14 @@ form {
     margin-bottom: -20px;
   }
   .search .text input {
-    height: 25px;
+    height: 30px;
+    padding-left: 25px;
+    padding-right: 10px;
+  }
+  .search .text i {
+    font-size: 10px;
+    padding: 0 10px;
+    color: #9aa0a6;
   }
   .search .submit input {
     height: 25px;
